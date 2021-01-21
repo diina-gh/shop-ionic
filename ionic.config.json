@@ -1,0 +1,7 @@
+{
+  "name": "dmd_front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
