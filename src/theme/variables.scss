@@ -76,7 +76,7 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -193,13 +193,18 @@
    */
 
   .md body {
-    --ion-background-color: #121212;
-    --ion-background-color-rgb: 18,18,18;
+     --ion-background-color: #121212;
+     --ion-background-color-rgb: 18,18,18;
+
 
     --ion-text-color: #ffffff;
+ 
+
     --ion-text-color-rgb: 255,255,255;
 
     --ion-border-color: #222222;
+
+
 
     --ion-color-step-50: #1e1e1e;
     --ion-color-step-100: #2a2a2a;
@@ -222,11 +227,49 @@
     --ion-color-step-950: #f3f3f3;
 
     --ion-item-background: #1e1e1e;
+      
 
     --ion-toolbar-background: #1f1f1f;
 
+
     --ion-tab-bar-background: #1f1f1f;
+       
 
     --ion-card-background: #1e1e1e;
+
+
   }
+
+
+   /************************************************/
+  /******************** MY THEME ******************/
+  /************************************************/
+  /*
+  .ios body{
+        --ion-background-color: white;
+    --ion-background-color-rgb: black;
+    --ion-text-color: black;
+    --ion-border-color: white;
+    --ion-item-background: white;
+    --ion-toolbar-background: #E13135;
+    --ion-tab-bar-background: snow;
+     --ion-card-background: white;
+}
+
+.md body{
+    --ion-background-color: white;
+    --ion-background-color-rgb: black;
+    --ion-text-color: black;
+    --ion-border-color: white;
+    --ion-item-background: white;
+    --ion-toolbar-background: #E13135;
+    --ion-tab-bar-background: snow;
+     --ion-card-background: white;
+}
+*/
+
+    
+
+
+
 }

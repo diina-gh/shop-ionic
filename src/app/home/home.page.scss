@@ -1,0 +1,65 @@
+// Slider Style START 
+.custon-nav{
+  height: 18px;
+  width: 10px;
+  cursor: pointer;
+
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider-nav{
+  ion-icon{
+      height: 100%;
+  }
+}
+
+.slide-text{
+  position: absolute;
+  color: white;
+  bottom: 30px;
+}
+
+// Slider Style STOP
+
+//ion-card{
+  //  width: 100px;
+  // height: 250px;
+//}
+
+/*
+ion-card-title{
+    font-size: 12px;
+    color: black;
+}
+*/
+
+ion-card ion-item ion-label{
+    font-size: 10px;
+    color: black;
+    padding-bottom: 2px;
+}
+
+ion-card ion-item ion-buttons ion-button{
+    font-size: 10px;
+    padding-bottom: 2px;
+}
+
+
+ion-card{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+ion-slide .ts-img{
+    width:100%;
+}
+
+.sh-img{
+  width:100%;
+  height: 200px;
+}
+
+
+

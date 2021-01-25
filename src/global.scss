@@ -24,3 +24,38 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+ion-toolbar{
+    color: white;
+}
+
+ion-tab-button ion-icon,ion-label{
+    color:var(--ion-color-step-100);
+}
+
+ion-tab-button ion-icon.activated{
+    color:red;
+}
+
+ion-page{
+    padding: 0px;
+    margin: 0px;
+}
+
+ion-toolbar{
+    padding: 0px;
+    margin: 0px;
+}
+
+app-header{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+ion-toolbar{
+    .toolbar-container{
+        background-color:#E13135;
+    }    
+}

@@ -1,0 +1,19 @@
+<app-header slot="top"></app-header>
+<ion-content>
+    <div class="container">
+        <div class="col-content">
+            <div class="content-header">
+                <a href="">TOUS LES PRODUITS</a>
+                <ion-icon name="arrow-forward" slot="end"></ion-icon>
+            </div>
+        </div>
+        <div class="col-sdb">
+          <div class="sdb-title">
+              <a href="">CATEGORIES</a>
+          </div>
+          <div class="sdb-item" *ngFor="let c of categories">
+            <a href="">{{c.title}}</a>
+          </div>
+        </div>
+    </div>
+</ion-content>

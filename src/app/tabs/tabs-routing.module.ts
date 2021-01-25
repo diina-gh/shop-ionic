@@ -4,33 +4,52 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: "tabs",
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: "home",
+        loadChildren: () =>
+          import("../home/home.module").then((m) => m.HomePageModule),
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: "categorie",
+        loadChildren: () =>
+          import("../categorie/categorie.module").then(
+            (m) => m.CategoriePageModule
+          ),
       },
+
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: "demo",
+        loadChildren: () =>
+          import("../demo/demo.module").then((m) => m.DemoPageModule),
       },
+
       {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
-      }
-    ]
+        path: "favoris",
+        loadChildren: () =>
+          import("../favoris/favoris.module").then((m) => m.FavorisPageModule),
+      },
+
+      {
+        path: "plus",
+        loadChildren: () =>
+          import("../plus/plus.module").then((m) => m.PlusPageModule),
+      },
+
+      {
+        path: "",
+        redirectTo: "/tabs/home",
+        pathMatch: "full",
+      },
+    ],
   },
   {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
-  }
+    path: "",
+    redirectTo: "/tabs/home",
+    pathMatch: "full",
+  },
 ];
 
 @NgModule({
@@ -38,3 +57,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class TabsPageRoutingModule {}
+

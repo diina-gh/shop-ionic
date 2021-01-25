@@ -5,6 +5,50 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'partenaires',
+    loadChildren: () => import('./partenaires/partenaires.module').then( m => m.PartenairesPageModule)
+  },
+  {
+    path: 'communication',
+    loadChildren: () => import('./communication/communication.module').then( m => m.CommunicationPageModule)
+  },
+  {
+    path: 'demo',
+    loadChildren: () => import('./demo/demo.module').then( m => m.DemoPageModule)
+  },
+  {
+    path: 'assistance',
+    loadChildren: () => import('./assistance/assistance.module').then( m => m.AssistancePageModule)
+  },
+  {
+    path: 'categorie',
+    loadChildren: () => import('./categorie/categorie.module').then( m => m.CategoriePageModule)
+  },
+  {
+    path: 'sav',
+    loadChildren: () => import('./sav/sav.module').then( m => m.SavPageModule)
+  },
+  {
+    path: 'compte',
+    loadChildren: () => import('./compte/compte.module').then( m => m.ComptePageModule)
+  },
+  {
+    path: 'plus',
+    loadChildren: () => import('./plus/plus.module').then( m => m.PlusPageModule)
+  },
+  {
+    path: 'favoris',
+    loadChildren: () => import('./favoris/favoris.module').then( m => m.FavorisPageModule)
+  },
+  {
+    path: 'header',
+    loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
   }
 ];
 @NgModule({

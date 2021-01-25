@@ -1,0 +1,259 @@
+<app-header slot="top"></app-header>
+<ion-content>
+  <div class="ion-no-padding">
+  <!-- Auto Play Slider -->
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-no-padding">
+        <ion-slides pager="true" [options]="slideOptsOne" #slideWithNav
+          (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+          <ion-slide>
+            <img class="ts-img" src="assets/img/cart-icon.png">
+          </ion-slide>
+          <ion-slide>
+            <img class="ts-img" src="assets/img/cart-icon.png">
+          </ion-slide>
+         <ion-slide>
+            <img class="ts-img" src="assets/img/cart-icon.png">
+          </ion-slide>
+        </ion-slides>
+    </ion-row>
+  </ion-grid>
+  </div>
+
+  <div class="">
+  <!-- Slider with Space Between -->
+  <h5 class="ion-padding"> NOUVEAUTES </h5>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2
+          (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+
+         <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline" ></ion-icon>
+                            </ion-button>
+                         </ion-buttons>
+                    </ion-item>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </ion-button>
+                         </ion-buttons>  
+                    </ion-item>
+            </ion-card>
+          </ion-slide>
+
+         <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </ion-button>
+                         </ion-buttons>  
+                    </ion-item>
+            </ion-card>        
+          </ion-slide>
+        </ion-slides>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  </div>
+
+
+ <div class="">
+  <!-- Slider with Space Between -->
+  <!-- MEILLEURES VENTES -->
+  <h5 class="ion-padding"> MEILLEURES VENTES </h5>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2
+          (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+          <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline" ></ion-icon>
+                            </ion-button>
+                         </ion-buttons>
+                    </ion-item>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </ion-button>
+                         </ion-buttons>  
+                    </ion-item>
+            </ion-card>
+          </ion-slide>
+
+         <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </ion-button>
+                         </ion-buttons>  
+                    </ion-item>
+            </ion-card>        
+          </ion-slide>
+        </ion-slides>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  </div>
+
+
+<div class="">
+  <!-- Slider with Space Between -->
+  <h5 class="ion-padding"> OFFRES ET PROMOS </h5>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2
+          (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+          <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline" ></ion-icon>
+                            </ion-button>
+                         </ion-buttons>
+                    </ion-item>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </ion-button>
+                         </ion-buttons>  
+                    </ion-item>
+            </ion-card>
+          </ion-slide>
+
+         <ion-slide>
+            <ion-card size="6">
+                    <img class="card-image" src="assets/img/cart-icon.png" />
+                    <ion-item>
+                         <ion-label>Product name</ion-label>
+                        <ion-buttons>
+                            <ion-button>            
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </ion-button>
+                         </ion-buttons>  
+                    </ion-item>
+            </ion-card>        
+          </ion-slide>
+        </ion-slides>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  </div>
+ 
+
+    <div class="">
+  <!-- Auto Play Slider -->
+  <!-- MEILLEURES VENTES -->
+  <h5 class="ion-padding"> NOS MARQUES </h5>
+  <ion-grid>
+    <ion-row class="ion-no-padding">
+      <ion-col size="12" class="ion-no-padding">
+        <ion-slides pager="true" [options]="slideOptsThree" #slideWithNav
+          (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+          <ion-slide size="3">
+            <img class="mq-img" src="assets/img/logo-icon.png">
+          </ion-slide>
+          <ion-slide size="3">
+            <img class="mq-img" src="assets/img/logo-icon.png">
+          </ion-slide>
+         <ion-slide size="3">
+            <img class="mq-img" src="assets/img/logo-icon.png">
+          </ion-slide>
+           <ion-slide size="3">
+            <img class="mq-img" src="assets/img/logo-icon.png">
+          </ion-slide>
+          <ion-slide size="3">
+            <img class="mq-img" src="assets/img/logo-icon.png">
+          </ion-slide>
+         <ion-slide size="3">
+            <img class="mq-img" src="assets/img/logo-icon.png">
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+
+  <div class="">
+  <!-- Slider with Space Between -->
+  <h5 class="ion-padding"> VISITE VIRTUELLE DU SHOWROOM </h5>
+
+  <ion-grid>
+    <ion-row class="ion-no-padding">
+      <ion-col size="12" class="ion-no-padding">
+        <img class="sh-img" src="assets/img/showroom.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-no-padding">
+      <ion-col size="12" class="ion-no-padding">
+        <img class="sh-img" src="assets/img/showroom.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  </div>
+
+  <br>
+
+</ion-content>
