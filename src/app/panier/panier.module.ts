@@ -11,7 +11,8 @@ import { PanierPage } from './panier.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PanierPageRoutingModule
+    PanierPageRoutingModule,
+    HeaderPageModule,
   ],
   declarations: [PanierPage]
 })
