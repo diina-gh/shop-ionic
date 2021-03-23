@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonSlides } from "@ionic/angular";
+import { IonSlides, IonContent, NavController } from "@ionic/angular";
 
 
 @Component({
@@ -11,10 +11,13 @@ export class HomePage implements OnInit {
   @ViewChild("slideWithNav", { static: false }) slideWithNav: IonSlides;
   @ViewChild("slideWithNav2", { static: false }) slideWithNav2: IonSlides;
   @ViewChild("slideWithNav3", { static: false }) slideWithNav3: IonSlides;
+  @ViewChild(IonContent) content: IonContent;
 
   sliderOne: any;
   sliderTwo: any;
   sliderThree: any;
+
+  feed: Boolean = false;
 
   //Configuration for each Slider
   slideOptsOne = {
@@ -23,18 +26,19 @@ export class HomePage implements OnInit {
     autoplay: true,
   };
   slideOptsTwo = {
-    initialSlide: 1,
+    initialSlide: 0,
     slidesPerView: 2,
-    loop: true,
-    centeredSlides: true,
-    spaceBetween: 20,
+    loop: false,
+    centeredSlides: false,
+    spaceBetween: 15,
+    autoplay: true,
   };
   slideOptsThree = {
     initialSlide: 0,
     slidesPerView: 3,
   };
 
-  constructor() {
+  constructor( private navCtrl: NavController) {
     //Item object for Nature
     this.sliderOne = {
       isBeginningSlide: true,
@@ -89,4 +93,14 @@ export class HomePage implements OnInit {
   }
 
   ngOnInit() {}
+
+  feeding() {
+    this.feed = !this.feed;
+    this.content.scrollByPoint(0, 510, 650);
+  }
+
+  toProductDetails(){
+    this.navCtrl.navigateForward("product-details");
+  }
+
 }

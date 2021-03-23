@@ -1,4 +1,72 @@
 .header{
-    --background: #E13135 !important;
-    background: #E13135 !important;
+    --background: #FFF !important;
+    background: #FFF!important;
+}
+
+.flexed-head{
+    width: 100%;
+    height: 100%;
+    padding: 3px 5px 3px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.group1{
+    width: 95px;
+    height: 95%;
+    color: #000;
+    font-size: 30px;
+}
+
+.logo-container{
+ align-self: center;
+}
+
+.logo{
+   
+}
+
+.group2{
+    width: 105px;
+    height: 95%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item{
+    width: 30px;
+    height: 100%;
+    align-self: center;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    border: 0.25px solid #efefef;
+
+}
+
+.icon-container{
+    align-self: center;
+    text-align: center;
+}
+
+.search{
+    color: #000;
+    width: 20px;
+    height:20px;
+    margin: 4.5px 2px 2px 2px;
+}
+
+.qrcode{
+    width: 20px;
+    height: 20px;
+    margin: 4.5px 2px 2px 2px;
+}
+
+.basket{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+
 }

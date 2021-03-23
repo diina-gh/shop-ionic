@@ -1,65 +1,257 @@
-// Slider Style START 
-.custon-nav{
-  height: 18px;
-  width: 10px;
-  cursor: pointer;
-
-  vertical-align: middle;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+ion-content{
+  --background:#f2f2f2;
+  font-family: 'Helvetica Neue', sans-serif;
 }
-.slider-nav{
-  ion-icon{
-      height: 100%;
+
+#presenting{
+  box-shadow: 3px 3px 7px #cccccc;
+  border-radius: 4px;
+}
+
+.img-container{
+  width: 100%;
+  height: 22.5vh;
+  border-radius: 4px;
+
+  img{
+    width: 100%;
+    height:100%;
+    border-radius: 4px;
   }
 }
 
-.slide-text{
+.description{
+  background-color: #ffffff;
+  padding: 15px 5px 15px 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.red-dmd{
+  color: #EE2524 ;
+}
+
+.section-title{
+margin-top: 15px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.see-more{
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(76.31deg, #EE2524 0.92%, #f6755c 95.82%);
+  border-radius: 50%;
+  text-align: center;
+  align-self: center;
+  h5{
+    font-size: 10.5px;
+    color: #ffffff;
+    text-align: center;
+    align-self: center;
+   }
+}
+
+
+
+.options{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.option{
+  background-color: #ffffff;
+  //border: 0.25px solid #efefef;
+  width: 47.5%;
+  box-shadow: 3px 3px 7px #dbdbdb;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.o-body{
+  width: 100%;
+  .o-image-container{
+    align-self: center;
+    text-align: center;
+  }
+}
+
+.qrcode{
+   align-self: center;
+   width: 100%;
+   padding: 20%;
+}
+
+.basket{
+   align-self: center;
+   width: 100%;
+   padding: 20%;
+}
+
+.o-footer{
+  background: linear-gradient(76.31deg, #EE2524 0.92%, #F56549 95.82%);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0 0 4px 4px;
+}
+
+.btn-feed{
+  margin-top: 25px;
+  background-color: #fff;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 7px #cccccc;
+  border: 0.25px solid #efefef;
+}
+
+.btn-feed:active{
+  margin-top: 25px;
+  background: linear-gradient(76.31deg, #EE2524 0.92%, #F56549 95.82%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 7px #cccccc;
+  border: 0.25px solid #efefef;
+}
+
+.slides{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  background-color: #ffffff;
+  width: 235px;
+  height: 240px;
+  box-shadow: 3px 3px 7px #dbdbdb;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.c-image-container{
+  width: 100% ;
+  height: 58%;
+}
+
+.image{
+   width: 95% ;
+   height: 92%;
+   position: relative;
+   top: 15px;
+   left: 4px;
+}
+
+.product-img{
+  width: 99% ;
+  height:99%;
+  align-self: center;
+}
+
+.product-serie{
+  font-size: 9.5px;
+  font-weight: 500;
+  color: gray;
+   position: absolute;
+   top: -12px;
+   left: -2px;  
+}
+
+.product-bdg{
+  font-size: 9.5px;
+  font-weight: 500;
+  color: red; 
   position: absolute;
-  color: white;
-  bottom: 30px;
+   top: -12px;
+   right: -2px;   
 }
 
-// Slider Style STOP
-
-//ion-card{
-  //  width: 100px;
-  // height: 250px;
-//}
-
-/*
-ion-card-title{
-    font-size: 12px;
-    color: black;
+.product-details{
+  width: 100%;
+  height: 27%;
+  text-align: left;
+  padding: 4px;
+  font-size: 9.5px;
 }
-*/
 
-ion-card ion-item ion-label{
+.p-title{
+    margin-top: 1.5px;
     font-size: 10px;
-    color: black;
-    padding-bottom: 2px;
 }
 
-ion-card ion-item ion-buttons ion-button{
-    font-size: 10px;
-    padding-bottom: 2px;
+.price-tag{
+  margin-top: 1.5px;
+  font-weight: 600;
 }
 
-
-ion-card{
-  margin-left: 2px;
-  margin-right: 2px;
+.category{
+  margin-top: 1.5px;
+  font-size: 8px;
+  color: #636363;
 }
 
-ion-slide .ts-img{
-    width:100%;
+.c-footer{
+  //height: 12%;
+  width: 100%;
+  background: linear-gradient(76.31deg, #EE2524 0.92%, #F56549 95.82%);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0 0 4px 4px;
 }
 
-.sh-img{
-  width:100%;
-  height: 200px;
+.txt{
+  text-align: center;
+  align-self: center;
 }
 
+.promo-card{
+  background-color: #ffffff;
+  width: 235px;
+  height: 240px;
+  box-shadow: 3px 3px 7px #dbdbdb;
+  border-radius: 4px;
+}
 
+.p-image-container{
+  width: 100%;
+  height: 100%;
+}
+
+.promo-img{
+  width: 100%;
+  height: 100%;
+}
 
