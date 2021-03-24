@@ -1,0 +1,114 @@
+<app-header slot="top"></app-header>
+
+<ion-content>
+  <div class="ion-margin">
+
+    <div class="section-title">
+      <div class="label">
+        <div class="title">LISTE INVENTAIRE</div>
+        <div class="tracer"><img src="assets/icon/tracer1.svg"></div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <ion-button class="custom-btn-li"  >
+          <ion-icon class="btn-icon" name="add-circle-outline" slot="end"></ion-icon>
+          NOUVEAU
+        </ion-button>
+    </div>
+
+    <div class="filter">
+
+      <div class="f-header" (click)="drop()">
+        <div class="f-label">FILTRES</div>
+        <div class="f-arrow" *ngIf="dropping == false"><ion-icon name="chevron-down-outline"></ion-icon></div>
+        <div class="f-arrow" *ngIf="dropping == true"><ion-icon name="chevron-up-outline"></ion-icon></div>
+      </div>
+
+     <div class="f-body" *ngIf="dropping == true">
+
+      <div class="input1">
+        <ion-item lines="none">
+          <ion-label>Produit</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="dates">
+
+        <div class="date">
+          <div class="d-title">Effectué entre le</div>
+          <div class="input2">
+              <ion-item lines="none">
+                  <ion-label>Début</ion-label>
+                  <ion-datetime displayFormat="DD MMM YYYY"  placeholder="JJ/MM/YYYY" doneText="Valider" cancelText="Annuler"></ion-datetime>
+              </ion-item>
+          </div>
+        </div>
+
+        <div class="date">
+          <div class="d-title">Et le</div>
+          <div class="input2">
+              <ion-item lines="none">
+                  <ion-label>Fin</ion-label>
+                  <ion-datetime displayFormat="DD MMM YYYY"  placeholder="JJ/MM/YYYY" doneText="Valider" cancelText="Annuler"></ion-datetime>
+              </ion-item>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="etat">
+        <div class="e-title">ETAT:</div>
+        <div class="e-group">
+          <div class="e-item">
+            <div class="item-name">Sans manquant</div>
+            <div class="item-cb"><ion-checkbox color="danger" [(ngModel)]="sansm" ></ion-checkbox></div>
+          </div>
+          <div class="e-item">
+            <div class="item-name">Avec manquant</div>
+            <div class="item-cb"><ion-checkbox color="danger" [(ngModel)]="avecm"></ion-checkbox></div>
+          </div>
+          <div class="e-item">
+            <div class="item-name">Tout</div>
+            <div class="item-cb"><ion-checkbox color="danger" [(ngModel)]="tout"></ion-checkbox></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+    <div class="table">
+      <ion-grid>
+
+        <ion-row size="12" class="ion-align-items-center">
+          <ion-col size="3"><div class="t-header">INFOS</div></ion-col>
+          <ion-col size="5"><div class="t-header">NBR DE PRODUITS</div></ion-col>
+          <ion-col size="2"><div class="t-header">ETAT</div></ion-col>
+          <ion-col size="2"><div class="t-header">ACTION</div></ion-col>
+        </ion-row>
+
+        <ion-row size="12" class="ion-align-items-center" *ngFor="let item of todelete">
+          <ion-col size="3">
+            <div class="infos">
+              <div class="i-date">{{item.date}}</div>
+              <div class="i-depot">{{item.depotName}}</div>
+            </div>
+          </ion-col>
+          <ion-col size="5"><div class="number">{{item.quantity}}</div></ion-col>
+          <ion-col size="2" *ngIf="item.etat == false"><div class="icon"><img src="assets/icon/close.svg"></div></ion-col>
+          <ion-col size="2" *ngIf="item.etat == true"><div class="icon"><img src="assets/icon/checkmark.svg"></div></ion-col>
+
+          <ion-col size="2" ><div class="icon2"><img src="assets/icon/menu1.svg"></div></ion-col>
+        </ion-row>
+
+       
+      </ion-grid>
+    </div>
+
+
+  </div>
+</ion-content>

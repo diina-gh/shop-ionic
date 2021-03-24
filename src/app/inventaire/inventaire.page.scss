@@ -1,0 +1,240 @@
+ion-content{
+  --background:#f2f2f2;
+  --color: #222;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.section-title{
+margin-top: 20px;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title{
+  position: relative;
+  animation-name: sliding;
+  animation-duration: 0.6s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes sliding {
+  from {left: -330px;}
+  to {left: 0px;}
+}
+
+.tracer{
+  position: relative;
+  animation-name: sliding2;
+  animation-duration: 0.9s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes sliding2 {
+  from {left: -330px;}
+  to {left: 0px;}
+}
+
+.btn-icon {
+  height: 18px;
+  width: 18px;
+  padding: 0 5px 0 5px !important;
+}
+
+.custom-btn-li {
+  margin-top: 20px;
+  width: 100%;
+  --background: linear-gradient(76.31deg, #EE2524 0.92%, #F56549 95.82%);
+  color: #fff;
+  height: 40px;
+  border-width: 2px;
+  --border-radius: 8px;
+}
+
+.custom-btn-li:active {
+  margin-top: 20px;
+  width: 100%;
+  --background: linear-gradient(76.31deg,  #F56549  0.92%, #EE2524 95.82%);
+  color: #fff;
+  height: 40px;
+  border-width: 2px;
+  --border-radius: 8px;
+}
+
+.filter{
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;    
+    background-color: #fff;
+    padding: 10px; 
+}
+
+.f-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.f-label{
+    font-size: 15.5px;
+    font-weight: 400;
+}
+
+.f-arrow{
+    ion-icon{
+        color: gray;
+    }
+}
+
+.input1{
+    ion-item{
+        margin-top: 10px;
+        --background: #e1e1e1;
+        height: 40px;
+        border-radius: 4px;
+        --padding-start: 5px;
+
+        ion-label{
+             font-size: 12.5px;
+        }
+        ion-input{
+            font-size: 14px;
+        }
+    }
+}
+
+.dates{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date{
+    width: 49%;
+}
+
+.d-title{
+    font-size: 14px;
+}
+
+.input2{
+    ion-item{
+        margin-top: 5px;
+        --background: #e1e1e1;
+        height: 40px;
+        border-radius: 4px;
+        --padding-start: 5px;
+        ion-label{
+             font-size: 12.5px;
+        }
+        ion-datetime{
+           font-size: 12.5px;
+            width: 90px;
+             --padding-start: 2px;
+        }
+    }
+}
+
+.etat{
+    margin-top: 20px;
+}
+
+.e-title{
+    font-size: 14px;
+}
+
+.e-group{
+    margin-top: 8px;
+    font-size: 12.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.e-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.item-name{
+    margin-right: 5px;
+}
+
+ion-checkbox{
+    --size: 12.5px;
+}
+
+.table{
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;    
+    background-color: #fff;
+    padding: 0 2px 20px 2px; 
+    font-size: 11px;
+}
+
+.t-header{
+    font-weight: 500;
+    //text-align: center;
+
+}
+
+
+.i-depot{
+ margin-top: 3px;
+ font-size: 10.5px;
+ color: #3b3b3b;
+ text-decoration: underline rgba(34, 34, 34, 0.479) 0.1px;
+}
+
+.info, .nombre, .icon{
+    align-self: center;
+    //text-align: center;
+}
+
+.number{
+    font-size: 12.5px;
+}
+
+.icon{
+    width: 14px;
+    height: 14px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.icon2{
+    width: 20px;
+    height: 20px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.number{
+    font-size: 12.5px;
+}
+
+ion-row{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-bottom: 0.5px solid  #C4C4C4;
+}
+
+
+
+
+
+
+
+

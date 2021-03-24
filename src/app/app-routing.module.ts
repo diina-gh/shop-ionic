@@ -61,7 +61,12 @@ const routes: Routes = [
   {
     path: 'devis',
     loadChildren: () => import('./devis/devis.module').then( m => m.DevisPageModule)
-  }
+  },
+  {
+    path: 'inventaire',
+    loadChildren: () => import('./inventaire/inventaire.module').then( m => m.InventairePageModule)
+  },
+
 ];
 @NgModule({
   imports: [
