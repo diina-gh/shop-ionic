@@ -9,6 +9,8 @@ import { ProductDetailsPageRoutingModule } from './product-details-routing.modul
 import { ProductDetailsPage } from './product-details.page';
 
 import { HeaderPageModule } from "../header/header.module";
+import { TabsPageModule } from "../tabs/tabs.module";
+
 
 
 @NgModule({
@@ -18,6 +20,7 @@ import { HeaderPageModule } from "../header/header.module";
     IonicModule,
     ProductDetailsPageRoutingModule,
     HeaderPageModule,
+    TabsPageModule,
   ],
   declarations: [ProductDetailsPage],
 })

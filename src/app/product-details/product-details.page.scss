@@ -126,32 +126,44 @@ ion-content{
     background-color: #fff;
 }
 
-.btn-add{
-  background: linear-gradient(76.31deg, #EE2524 0.92%, #F56549 95.82%);
-  width: 100%;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
-  border: 0.2px solid #ec1312;
+.custum-btn-c{
+    margin-top: 25px;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(76.31deg, #EE2524 0.92%, #F56549 95.82%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
+    border: 0.2px solid #ec121281;
+    .btn-label{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+    }
 }
 
-.btn-add:active{
-  background: linear-gradient(68.45deg, #292625 -2.06%, #593F37 98.68%);  width: 100%;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
-  border: 0.2px solid #222;
+.custum-btn-c:active{
+    margin-top: 25px;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(76.31deg, #F56549 0.92%,  #EE2524  95.82%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
+    border: 0.2px solid #c80f0f81;
+    .btn-label{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+    }
 }
+
 
 .fiche{
     display: flex;

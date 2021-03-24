@@ -2,21 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { PanierPageRoutingModule } from './panier-routing.module';
+
 import { HeaderPageModule } from "../header/header.module";
 import { TabsPageModule } from "../tabs/tabs.module";
 
-import { PanierPage } from './panier.page';
+
+import { DevisPageRoutingModule } from './devis-routing.module';
+import { DevisPage } from './devis.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PanierPageRoutingModule,
+    DevisPageRoutingModule,
     HeaderPageModule,
     TabsPageModule,
   ],
-  declarations: [PanierPage]
+  declarations: [DevisPage]
 })
-export class PanierPageModule {}
+export class DevisPageModule {}

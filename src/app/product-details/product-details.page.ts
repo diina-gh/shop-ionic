@@ -92,4 +92,8 @@ export class ProductDetailsPage implements OnInit {
 
   ngOnInit() {}
 
+  toPanier(){
+    this.navCtrl.navigateForward("panier");
+  }
+
 }

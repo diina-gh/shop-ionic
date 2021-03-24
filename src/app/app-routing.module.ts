@@ -57,6 +57,10 @@ const routes: Routes = [
   {
     path: 'panier',
     loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
+  {
+    path: 'devis',
+    loadChildren: () => import('./devis/devis.module').then( m => m.DevisPageModule)
   }
 ];
 @NgModule({
