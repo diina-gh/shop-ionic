@@ -103,4 +103,12 @@ export class HomePage implements OnInit {
     this.navCtrl.navigateForward("product-details");
   }
 
+  toInventaire(){
+    this.navCtrl.navigateForward("inventaire");
+  }
+
+  toPanier(){
+    this.navCtrl.navigateForward("panier");
+  }
+
 }

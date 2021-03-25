@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavController} from '@ionic/angular'
 
 @Component({
   selector: "app-inventaire",
@@ -11,7 +12,7 @@ export class InventairePage implements OnInit {
   tout: Boolean = true;
   dropping: Boolean = false;
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
 
   drop() {
     this.dropping = !this.dropping;
@@ -20,6 +21,10 @@ export class InventairePage implements OnInit {
   checkOne() {}
 
   ngOnInit() {}
+
+  add(){
+    this.navCtrl.navigateForward("ajout-inventaire");
+  }
 
   //to delete
   todelete = [
