@@ -1,6 +1,5 @@
 .header{
-    --background: #FFF !important;
-    background: #FFF!important;
+    --background: #36688d !important;
 }
 
 .flexed-head{
@@ -13,7 +12,7 @@
 }
 
 .group1{
-    width: 95px;
+    width: 120px;
     height: 95%;
     color: #000;
     font-size: 30px;
@@ -21,6 +20,9 @@
 
 .logo-container{
  align-self: center;
+ font-size: 24px;
+ font-weight: 500;
+ color: rgba(255, 255, 255, 0.842);
 }
 
 .logo{
@@ -28,7 +30,7 @@
 }
 
 .group2{
-    width: 105px;
+    width: 70px;
     height: 95%;
     align-self: center;
     display: flex;
@@ -40,10 +42,9 @@
     width: 30px;
     height: 100%;
     align-self: center;
-    background-color: #f2f2f2;
+    background-color: rgba(255, 255, 255, 0.151);
     border-radius: 50%;
-    border: 0.25px solid #efefef;
-
+    border: 0.25px solid rgba(255, 255, 255, 0.199);
 }
 
 .icon-container{
@@ -51,22 +52,11 @@
     text-align: center;
 }
 
-.search{
-    color: #000;
+.h-icon{
+    color: #fff;
     width: 20px;
     height:20px;
     margin: 4.5px 2px 2px 2px;
 }
 
-.qrcode{
-    width: 20px;
-    height: 20px;
-    margin: 4.5px 2px 2px 2px;
-}
 
-.basket{
-    width: 20px;
-    height: 20px;
-    margin: 2px;
-
-}
