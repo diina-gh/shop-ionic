@@ -4,7 +4,7 @@ ion-content{
 }
 
 #presenting{
-  box-shadow: 3px 3px 7px #cccccc;
+ // box-shadow: 3px 3px 7px #cccccc;
 }
 
 //78 6340718
@@ -19,16 +19,7 @@ ion-content{
   }
 }
 
-.description{
-  background-color: #ffffff;
-  padding: 15px 5px 15px 5px;
-  font-size: 16px;
-  font-weight: 500;
-}
 
-.red-dmd{
-  color: #EE2524 ;
-}
 
 .section-title{
 margin-top: 20px;
@@ -40,77 +31,23 @@ justify-content: space-between;
 .title{
   font-size: 16px;
   font-weight: 500;
+  color: #222;
 }
 
 .see-more{
   width: 38px;
-  height: 38px;
-  border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(to right,#5491bd, #8cb5d3);
-  //background: linear-gradient(to right,#f18904, #f49f05);
+  //background: linear-gradient(to right,#5491bd, #8cb5d3);
 
   div{
-    font-size: 10.5px;
+    text-align: right;
+    font-size: 13px;
     font-weight: 600;
-    //color: #ffffff;
-    color: #f49f05;
+    color: #5491bdf5;
    }
-}
-
-
-
-.options{
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.option{
-  background-color: #ffffff;
-  //border: 0.25px solid #efefef;
-  width: 47.5%;
-  box-shadow: 3px 3px 7px #dbdbdb;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.o-body{
-  width: 100%;
-  .o-image-container{
-    align-self: center;
-    text-align: center;
-  }
-}
-
-.qrcode{
-   align-self: center;
-   width: 100%;
-   padding: 20%;
-}
-
-.basket{
-   align-self: center;
-   width: 100%;
-   padding: 20%;
-}
-
-.o-footer{
-  background: linear-gradient(to right,#f18904, #f49f05);
-  color: #fafafa;
-  font-size: 10px;
-  font-weight: 500;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 0 0 4px 4px;
 }
 
 .slides{
@@ -163,7 +100,7 @@ justify-content: space-between;
 .product-bdg{
   font-size: 9.5px;
   font-weight: 500;
-  color: #f18904; 
+  color: #5491bd; 
   position: absolute;
    top: -12px;
    right: -2px;   
@@ -196,8 +133,9 @@ justify-content: space-between;
 .c-footer{
   //height: 12%;
   width: 100%;
-  background: linear-gradient(to right,#f18904, #f49f05);
-  color: #ffffff;
+  background: linear-gradient(to right,#36688d, #5491bd);
+  //background: linear-gradient(to right,#f18904, #f49f05);
+  color: #fafafa;
   font-size: 10px;
   font-weight: 500;
   text-align: center;

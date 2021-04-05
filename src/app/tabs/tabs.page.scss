@@ -1,18 +1,8 @@
-ion-tabs{
-    background-color: white;
-}
-ion-tab-bar{
-    background-color: white;
-    ion-icon{
-        color: rgb(36, 34, 34);
-        font-size: 26px;
-    }
-    ion-label{
-        color: rgb(36, 34, 34);
-        font-size: 10px;
-    }
-}
 
 ion-tab-button{
-    background-color: white;
+    --color-selected:#5491bd;
+}
+
+.dot{
+    font-size: 6.5px;
 }

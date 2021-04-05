@@ -1,32 +1,22 @@
-<!------ tabs -------> 
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab()">
 
+  <ion-tab-bar slot="bottom">
     <ion-tab-button tab="home">
-      <ion-icon name="remove-circle-outline"></ion-icon>
-      <ion-label>Accueil</ion-label>
+      <ion-icon name="{{homeIcon}}"></ion-icon>
     </ion-tab-button>
 
     <ion-tab-button tab="categorie">
-      <ion-icon name="remove-circle-outline"></ion-icon>
-      <ion-label>Catégories</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="demo">
-      <ion-icon name="remove-circle-outline"></ion-icon>
-      <ion-label>Demo</ion-label>
+      <ion-icon name="{{categorieIcon}}"></ion-icon>
     </ion-tab-button>
 
     <ion-tab-button tab="favoris">
-      <ion-icon name="remove-circle-outline"></ion-icon>
-      <ion-label>Favoris</ion-label>
+      <ion-icon name="{{favorisIcon}}"></ion-icon>
     </ion-tab-button>
 
     <ion-tab-button tab="plus">
-      <ion-icon name="remove-circle-outline"></ion-icon>
-      <ion-label>Plus</ion-label>
+      <ion-icon name="{{profilIcon}}"></ion-icon>
     </ion-tab-button>
 
   </ion-tab-bar>
+
 </ion-tabs>
-  <!---- End-tabs ----> 
