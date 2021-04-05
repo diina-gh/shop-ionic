@@ -38,7 +38,7 @@ export class HomePage implements OnInit {
     slidesPerView: 3,
   };
 
-  constructor( private navCtrl: NavController) {
+  constructor(private navCtrl: NavController) {
     //Item object for Nature
     this.sliderOne = {
       isBeginningSlide: true,
@@ -99,16 +99,43 @@ export class HomePage implements OnInit {
     this.content.scrollByPoint(0, 510, 650);
   }
 
-  toProductDetails(){
+  toProductDetails() {
     this.navCtrl.navigateForward("product-details");
   }
 
-  toInventaire(){
+  toInventaire() {
     this.navCtrl.navigateForward("inventaire");
   }
 
-  toPanier(){
+  toPanier() {
     this.navCtrl.navigateForward("panier");
   }
 
+  todelete = [
+    {
+      name: "",
+      price: "",
+      image: "assets/img/image6.jpeg",
+    },
+    {
+      name: "",
+      price: "",
+      image: "assets/img/image6.jpeg",
+    },
+    {
+      name: "",
+      price: "",
+      image: "assets/img/image6.jpeg",
+    },
+    {
+      name: "",
+      price: "",
+      image: "assets/img/image6.jpeg",
+    },
+    {
+      name: "",
+      price: "",
+      image: "assets/img/image6.jpeg",
+    },
+  ];
 }
