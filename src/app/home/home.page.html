@@ -1,55 +1,13 @@
 <app-header slot="top"></app-header>
 <ion-content [scrollEvents]="true">
 
-  <div id="presenting" class="ion-margin">
+  <div id="presenting">
     <div class="img-container">
-      <img src="assets/img/home-img1.png">
-    </div>
-    <div class="description">
-      Bienvenue sur <span class="red-dmd">DMD-CI</span>
+      <img src="assets/img/image1.jpg">
     </div>
   </div>
 
-  <div class="ion-margin">
-
-    <div class="section-title">
-      <div><h5 class="title">CHOISIR UNE OPTION</h5></div>
-    </div>
-
-    <div class="options">
-
-     <div class="option">
-      <div class="o-body">
-        <div class="o-image-container">
-          <img class="qrcode" src="assets/icon/qrcode.svg" >
-        </div>
-      </div>
-      <div class="o-footer">
-        <div class="txt">SCANNER</div>
-      </div>
-    </div>
-
-    <div class="option" (click)="toPanier()">
-      <div class="o-body">
-        <div class="o-image-container">
-          <img class="basket" src="assets/icon/basket.svg" >
-        </div>
-      </div>
-      <div class="o-footer">
-        <div class="txt">VOIR PANIER</div>
-      </div>
-    </div>
-
-    </div>
-  </div>
-
-  <div class="ion-margin"> 
-    <div class="custum-btn-w" *ngIf="feed == false" (click)="feeding()">
-      <div class="btn-label">VOIR FIL D'ACTUALITE</div>
-    </div>
-  </div>
-
-  <div class="feed" *ngIf="feed == true">
+  <div class="feed">
 
     <!--------------------NOUVEAUTE-------------------->
    <div id="nouveaute" class="ion-margin">
