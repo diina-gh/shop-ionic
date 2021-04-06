@@ -73,7 +73,7 @@
         <div class="slides">
         <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2 (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
         
-          <ion-slide *ngFor="let item of todelete">
+          <ion-slide *ngFor="let item of todelete.reverse()">
            <div class="card" >
 
               <div class="c-image-container" >
@@ -123,14 +123,14 @@
         <div class="slides">
         <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2 (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
         
-          <ion-slide *ngFor="let item of todelete">
+          <ion-slide *ngFor="let item of todelete.reverse()">
            <div class="card" >
 
               <div class="c-image-container" >
                 <div class="image">
                   <img class="product-img" src="{{item.image}}"> 
                   <span class="product-serie"></span>
-                  <span class="product-bdg">30%</span>               
+                  <span class="product-bdg">-30%</span>               
                 </div>
 
                </div>

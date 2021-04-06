@@ -13,6 +13,7 @@ export class HomePage implements OnInit {
   @ViewChild("slideWithNav3", { static: false }) slideWithNav3: IonSlides;
   @ViewChild(IonContent) content: IonContent;
 
+  todelete2: any = [];
   sliderOne: any;
   sliderTwo: any;
   sliderThree: any;
@@ -28,7 +29,7 @@ export class HomePage implements OnInit {
   slideOptsTwo = {
     initialSlide: 0,
     slidesPerView: 2,
-    loop: false,
+    loop: true,
     centeredSlides: false,
     spaceBetween: 15,
     autoplay: true,
@@ -138,4 +139,5 @@ export class HomePage implements OnInit {
       image: "assets/img/sh-img5.jpg",
     },
   ];
+
 }
