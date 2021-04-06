@@ -113,29 +113,29 @@ export class HomePage implements OnInit {
 
   todelete = [
     {
-      name: "",
-      price: "",
-      image: "assets/img/image6.jpeg",
+      name: "SS Original HM Tee T-Shirt Homme",
+      price: "12000 FCFA",
+      image: "assets/img/sh-img6.jpg",
     },
     {
-      name: "",
-      price: "",
-      image: "assets/img/image6.jpeg",
+      name: "Mini Robe Été Manche Courte",
+      price: "9000 FCFA",
+      image: "assets/img/sh-img7.jpg",
     },
     {
-      name: "",
-      price: "",
-      image: "assets/img/image6.jpeg",
+      name: "Costume 3 pièces Femme",
+      price: "4000 FCFA",
+      image: "assets/img/sh-img3.jpg",
     },
     {
-      name: "",
-      price: "",
-      image: "assets/img/image6.jpeg",
+      name: "Vmsilla Ls Short Dress Lt",
+      price: "5000 FCFA",
+      image: "assets/img/sh-img2.jpg",
     },
     {
-      name: "",
-      price: "",
-      image: "assets/img/image6.jpeg",
+      name: "Pull Homme Col V ",
+      price: "14000 FCFA",
+      image: "assets/img/sh-img5.jpg",
     },
   ];
 }

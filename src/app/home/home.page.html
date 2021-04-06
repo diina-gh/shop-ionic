@@ -24,21 +24,24 @@
     <div class="slides">
         <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2 (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
         
-          <ion-slide>
-           <div class="card">
+          <ion-slide *ngFor="let item of todelete">
+           <div class="card" >
 
-              <div class="c-image-container" (click)="toProductDetails()">
+              <div class="c-image-container" >
                 <div class="image">
-                  <img class="product-img" src="assets/img/todelete/mouleuse.png"> 
-                  <span class="product-serie">MEULEUSE0034</span>
+                  <img class="product-img" src="{{item.image}}"> 
+                  <span class="product-serie"></span>
                   <span class="product-bdg">NEW</span>               
                 </div>
 
                </div>
 
                <div class="product-details">
-                 <div class="p-title">Mouleuse angular 800w</div>
-                 <div class="price-tag">8104 FCFA</div>
+                 <div class="p-title">
+                  {{item.name.substring(0, 20)}}
+                  {{item.name.length > 20 ? '...' : ''}}
+                 </div>
+                 <div class="price-tag">{{item.price}}</div>
 
                </div>
 
@@ -48,52 +51,7 @@
            </div>
           </ion-slide>
 
-          <ion-slide>
-           <div class="card">
-
-              <div class="c-image-container">
-                <div class="image">
-                  <img class="product-img" src="assets/img/todelete/rutile.png"> 
-                  <span class="product-serie">MEULEUSE0034</span>
-                  <span class="product-bdg">NEW</span>                               
-                </div>
-               </div>
-
-               <div class="product-details">
-                 <div class="p-title">Mouleuse angular 800w</div>
-                 <div class="price-tag">8104 FCFA</div>
-
-               </div>
-
-              <div class="c-footer">
-                 <div class="txt">AJOUTER AU PANIER</div>
-              </div>
-           </div>
-          </ion-slide>
-
-              <ion-slide>
-           <div class="card">
-
-              <div class="c-image-container">
-                <div class="image">
-                   <img class="product-img" src="assets/img/todelete/aspirateur.png"> 
-                   <span class="product-serie">MEULEUSE0034</span>
-                   <span class="product-bdg">NEW</span>                               
-                </div>
-               </div>
-
-               <div class="product-details">
-                <div class="p-title">Mouleuse angular 800w</div>
-                 <div class="price-tag">8104 FCFA</div>
-
-               </div>
-
-              <div class="c-footer">
-                 <div class="txt">AJOUTER AU PANIER</div>
-              </div>
-           </div>
-          </ion-slide>
-         </ion-slides>
+        </ion-slides>
 
         </div>
 
@@ -112,6 +70,39 @@
       </div>
     </div>
 
+        <div class="slides">
+        <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2 (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+        
+          <ion-slide *ngFor="let item of todelete">
+           <div class="card" >
+
+              <div class="c-image-container" >
+                <div class="image">
+                  <img class="product-img" src="{{item.image}}"> 
+                  <span class="product-serie"></span>
+                  <span class="product-bdg"></span>               
+                </div>
+
+               </div>
+
+               <div class="product-details">
+                 <div class="p-title">
+                  {{item.name.substring(0, 20)}}
+                  {{item.name.length > 20 ? '...' : ''}}
+                 </div>
+                 <div class="price-tag">{{item.price}}</div>
+
+               </div>
+
+              <div class="c-footer">
+                 <div class="txt">AJOUTER AU PANIER</div>
+              </div>
+           </div>
+          </ion-slide>
+
+        </ion-slides>
+
+        </div>
 
 
     </div>
@@ -129,7 +120,39 @@
       </div>
     </div>
 
+        <div class="slides">
+        <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2 (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+        
+          <ion-slide *ngFor="let item of todelete">
+           <div class="card" >
 
+              <div class="c-image-container" >
+                <div class="image">
+                  <img class="product-img" src="{{item.image}}"> 
+                  <span class="product-serie"></span>
+                  <span class="product-bdg">30%</span>               
+                </div>
+
+               </div>
+
+               <div class="product-details">
+                 <div class="p-title">
+                  {{item.name.substring(0, 20)}}
+                  {{item.name.length > 20 ? '...' : ''}}
+                 </div>
+                 <div class="price-tag">{{item.price}}</div>
+
+               </div>
+
+              <div class="c-footer">
+                 <div class="txt">AJOUTER AU PANIER</div>
+              </div>
+           </div>
+          </ion-slide>
+
+        </ion-slides>
+
+        </div>
 
     </div>
     <!-------------------END-OFFRES-PROMOS--------------------->
