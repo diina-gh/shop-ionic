@@ -133,11 +133,11 @@ export class HomePage implements OnInit {
       price: "5000 FCFA",
       image: "assets/img/sh-img2.jpg",
     },
+
     {
       name: "Pull Homme Col V ",
       price: "14000 FCFA",
       image: "assets/img/sh-img5.jpg",
     },
   ];
-
 }
