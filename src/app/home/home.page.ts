@@ -31,7 +31,7 @@ export class HomePage implements OnInit {
     slidesPerView: 2,
     loop: true,
     centeredSlides: false,
-    spaceBetween: 15,
+    spaceBetween: 14,
     autoplay: true,
   };
   slideOptsThree = {
