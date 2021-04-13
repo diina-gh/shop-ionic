@@ -1,0 +1,21 @@
+.p-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(215, 230, 243, 0.514);
+}
+
+.grid-row{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(90, 121, 121, 0.685);
+}
+
+.grid-col{
+ width: 49%;
+ height: 100%;
+ background-color: rgba(25, 43, 44, 0.541);
+}
