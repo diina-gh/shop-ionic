@@ -25,6 +25,171 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+//Custom class
+@for $i from 1 through 2500 {
+    .zi-#{$i} {
+        z-index: $i * 1;
+    }
+}
+
+@for $i from 1 through 150 {
+    .lh-#{$i} {
+        line-height: $i * 1px;
+    }
+}
+
+@for $i from 1 through 150 {
+    .fsize-#{$i} {
+        font-size: $i * 1px !important;
+    }
+}
+
+@for $i from 1 through 100 {
+    .wd-#{$i} {
+        width: $i * 1%;
+    }
+}
+
+@for $i from 1 through 1000 {
+    .wdpx-#{$i} {
+        width: $i * 1px !important;
+    }
+}
+
+@for $i from 1 through 1000 {
+    .hpx-#{$i} {
+        height: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .p-#{$i} {
+        padding: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .m-#{$i} {
+        margin: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .pt-#{$i} {
+        padding-top: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .pb-#{$i} {
+        padding-bottom: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .pl-#{$i} {
+        padding-left: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .pr-#{$i} {
+        padding-right: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .mb-#{$i} {
+        margin-bottom: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .mt-#{$i} {
+        margin-top: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .ml-#{$i} {
+        margin-left: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .mr-#{$i} {
+        margin-right: $i * 1px;
+    }
+}
+
+@for $i from 1 through 100 {
+    .filter-b-#{$i} {
+        filter: brightness($i * 1%);
+    }
+}
+
+@for $i from 1 through 200 {
+    .border-r-#{$i} {
+        border-radius: $i * 1px;
+    }
+}
+
+@for $i from 1 through 50 {
+    .top-#{$i} {
+        top: $i * 1px;
+    }
+}
+
+
+.r-flexed-o{
+    display: flex;
+    flex-direction: row;
+}
+
+.c-flexed-o{
+    display: flex;
+    flex-direction: column;
+}
+
+.c-flexed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cb-flexed{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+}
+
+.r-flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rsb-flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rr-flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.rl-flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+img{
+    filter: brightness(1.086);
+}
 
 
 ion-toolbar{
