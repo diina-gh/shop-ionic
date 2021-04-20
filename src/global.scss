@@ -45,7 +45,7 @@
 }
 
 @for $i from 1 through 100 {
-    .wd-#{$i} {
+    .w-#{$i} {
         width: $i * 1%;
     }
 }
@@ -187,10 +187,33 @@
     justify-content:flex-start;
 }
 
-img{
-    filter: brightness(1.086);
+.text-center{
+    text-align: center;
 }
 
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.align-center{
+    align-self: center;
+}
+
+.align-top{
+    align-self: flex-start;
+}
+
+.align-bottom{
+    align-self: flex-end;
+}
+
+img{
+    filter: brightness(1.065);
+}
 
 ion-toolbar{
     color: white;
