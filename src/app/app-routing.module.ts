@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'header',
     loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
   },
+  {
+    path: 'details-product',
+    loadChildren: () => import('./details-product/details-product.module').then( m => m.DetailsProductPageModule)
+  },
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
 
 
 ];
