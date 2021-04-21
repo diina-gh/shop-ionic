@@ -21,12 +21,6 @@ const routes: Routes = [
       },
 
       {
-        path: "demo",
-        loadChildren: () =>
-          import("../demo/demo.module").then((m) => m.DemoPageModule),
-      },
-
-      {
         path: "favoris",
         loadChildren: () =>
           import("../favoris/favoris.module").then((m) => m.FavorisPageModule),

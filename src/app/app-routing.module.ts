@@ -10,18 +10,7 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
-  {
-    path: 'partenaires',
-    loadChildren: () => import('./partenaires/partenaires.module').then( m => m.PartenairesPageModule)
-  },
-  {
-    path: 'communication',
-    loadChildren: () => import('./communication/communication.module').then( m => m.CommunicationPageModule)
-  },
-  {
-    path: 'demo',
-    loadChildren: () => import('./demo/demo.module').then( m => m.DemoPageModule)
-  },
+
   {
     path: 'assistance',
     loadChildren: () => import('./assistance/assistance.module').then( m => m.AssistancePageModule)
@@ -29,10 +18,6 @@ const routes: Routes = [
   {
     path: 'categorie',
     loadChildren: () => import('./categorie/categorie.module').then( m => m.CategoriePageModule)
-  },
-  {
-    path: 'sav',
-    loadChildren: () => import('./sav/sav.module').then( m => m.SavPageModule)
   },
   {
     path: 'compte',
@@ -50,26 +35,7 @@ const routes: Routes = [
     path: 'header',
     loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
   },
-  {
-    path: 'product-details',
-    loadChildren: () => import('./product-details/product-details.module').then( m => m.ProductDetailsPageModule)
-  },
-  {
-    path: 'panier',
-    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
-  },
-  {
-    path: 'devis',
-    loadChildren: () => import('./devis/devis.module').then( m => m.DevisPageModule)
-  },
-  {
-    path: 'inventaire',
-    loadChildren: () => import('./inventaire/inventaire.module').then( m => m.InventairePageModule)
-  },
-  {
-    path: 'ajout-inventaire',
-    loadChildren: () => import('./ajout-inventaire/ajout-inventaire.module').then( m => m.AjoutInventairePageModule)
-  },
+
 
 ];
 @NgModule({

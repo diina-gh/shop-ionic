@@ -100,18 +100,6 @@ export class HomePage implements OnInit {
     this.content.scrollByPoint(0, 510, 650);
   }
 
-  toProductDetails() {
-    this.navCtrl.navigateForward("product-details");
-  }
-
-  toInventaire() {
-    this.navCtrl.navigateForward("inventaire");
-  }
-
-  toPanier() {
-    this.navCtrl.navigateForward("panier");
-  }
-
   todelete = [
     {
       name: "SS Original HM Tee T-Shirt Homme",
