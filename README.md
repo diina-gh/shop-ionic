@@ -1,5 +1,6 @@
 ![Image](https://github.com/diina-gh/Shop/blob/master/src/assets/img/preview.png)
 ## Shop
+(work in progress..)
 `Shop` is an app template created with [Ionic Framework](https://ionicframework.com/)
 ###
 Ionic is an open source mobile UI toolkit for building high quality, cross-platform native and web app experiences.
