@@ -19,7 +19,7 @@ git clone https://github.com/diina-gh/Shop/
 If you don't have `git`, you can get it from [here](https://git-scm.com/downloads)
 ## Start the project:
 ```npm
-cd Melody
+cd Shop
 npm install (to install the dependencies in the local node_modules folder)
 ionic serve (or ionic serve --l)
 ```
