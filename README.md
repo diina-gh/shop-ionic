@@ -33,7 +33,7 @@ ionic cordova plarform add ios
 ```
 ## Xcode
 To run and debug Ionic apps on iOS simulators and devices, you can use Xcode. Xcode is an IDE for creating native iOS apps. It includes the iOS SDK and Xcode command-line tools. 
-#[More about Xcode..](https://developer.apple.com/xcode/)
+[More about Xcode..](https://developer.apple.com/xcode/)
 ###
 Then:
 ```npm
