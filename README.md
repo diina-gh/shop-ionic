@@ -28,6 +28,8 @@ The command `ionic serve` will start a live-reload server for your project in a 
 With Cordova, you can test right in a simulator or use your own phone. To set up and run the app on your phone, use the following commands:
 ```npm
 ionic cordova platform add android
+//or 
+ionic cordova plarform add ios
 ```
 ###
 Then:
