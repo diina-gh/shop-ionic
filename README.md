@@ -39,7 +39,7 @@ Then:
 ```npm
 ionic cordova run android --device
 //or
-ionic cordova run ios --device (although I would recommend to use xcode for ios device)
+ionic cordova run ios --device (although I would recommend using xcode for ios device)
 ```
 Note that your phone and your computer must be connected via a USB port.
 
