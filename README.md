@@ -12,7 +12,7 @@ Install the Ionic CLI with npm:
 ```npm
 npm install -g @ionic/cli
 ```
-## Clone Melody repository:
+## Clone Shop repository:
 ```git
 git clone https://github.com/diina-gh/Shop/
 ```
