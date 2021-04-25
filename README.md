@@ -25,7 +25,7 @@ ionic serve (or ionic serve --l)
 ```
 The command `ionic serve` will start a live-reload server for your project in a web browser. When changes are made to any HTML, SASS, or TypeScript files, the browser will automatically reload.
 ## Cordova
-With Cordova, you can test right in a simulator or use your own phone. To set up and run the app on your phone, use the following commands:
+With Cordova, you can test right in a simulator or use your own phone. To add a platform in your project, use the following commands:
 ```npm
 ionic cordova platform add android
 //or 
