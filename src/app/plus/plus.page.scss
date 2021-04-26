@@ -20,23 +20,34 @@
 }
 
 .grid-col{
- width: 47%;
- height: 100%;
- border-radius: 8px;
- box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
- background-color: #56616810;
+    width: 47%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #56616810;
+    &:active{
+        background-color: #3b617931;
+        cursor: pointer;
+    }
 }
 
 .profil{
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
      background-color: #56616810;
+    &:active{
+     background-color: #3b617931;
+     cursor: pointer;
+ }
 }
 
 .ellipsis{
     ion-icon{
         font-size: 19px;
         color: #293842;
+    }
+    &:hover{
+        cursor: pointer;
     }
 }
 
@@ -79,6 +90,9 @@
     color: rgba(34, 34, 34, 0.9);
     font-size: 16px;
     font-weight: 500;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .location{
@@ -92,6 +106,10 @@
         color: #5491bdf5;
         font-size: 13.5px;
         margin-right: 0.5px;
+    }
+
+    &:hover{
+        cursor: pointer;
     }
 }
 
