@@ -40,17 +40,16 @@ export class HomePage implements OnInit {
   };
 
   constructor(private navCtrl: NavController) {
-    //Item object for Nature
     this.sliderOne = {
       isBeginningSlide: true,
       isEndSlide: false,
     };
-    //Item object for Food
+
     this.sliderTwo = {
       isBeginningSlide: true,
       isEndSlide: false,
     };
-    //Item object for Fashion
+
     this.sliderThree = {
       isBeginningSlide: true,
       isEndSlide: false,
