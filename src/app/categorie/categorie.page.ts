@@ -16,7 +16,6 @@ export class CategoriePage implements OnInit {
     slidesPerView: 3,
     loop: true,
     centeredSlides: false,
-   
   };
 
   constructor() {
@@ -64,4 +63,37 @@ export class CategoriePage implements OnInit {
       object.isEndSlide = istrue;
     });
   }
+
+  todelete = [
+    {
+      name: "SS Original HM Tee T-Shirt Homme",
+      price: "12000 FCFA",
+      image: "assets/img/sh-img1.jpg",
+    },
+    {
+      name: "Mini Robe Été Manche Courte",
+      price: "9000 FCFA",
+      image: "assets/img/sh-img7.jpg",
+    },
+    {
+      name: "SS Original HM Tee T-Shirt Homme",
+      price: "12000 FCFA",
+      image: "assets/img/sh-img6.jpg",
+    },
+    {
+      name: "Costume 3 pièces Femme",
+      price: "4000 FCFA",
+      image: "assets/img/sh-img3.jpg",
+    },
+    {
+      name: "Pull Homme Col V ",
+      price: "14000 FCFA",
+      image: "assets/img/sh-img5.jpg",
+    },
+    {
+      name: "Vmsilla Ls Short Dress Lt",
+      price: "5000 FCFA",
+      image: "assets/img/sh-img2.jpg",
+    },
+  ];
 }

@@ -26,5 +26,35 @@
                 </ion-slide>
             </ion-slides>
         </div>
+        <div class="listproduct">
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="6" class="mt-4" *ngFor="let item of todelete">
+            <div class="card" >
+
+              <div class="c-image-container" >
+                <div class="image">
+                  <img class="product-img" src="{{item.image}}"> 
+                </div>
+
+               </div>
+
+               <div class="product-details">
+                 <div class="p-title">
+                  {{item.name.substring(0, 17)}}
+                  {{item.name.length > 17 ? '...' : ''}}
+                 </div>
+                 <div class="price-tag">{{item.price}}</div>
+
+               </div>
+
+              <div class="c-footer">
+                 <div class="txt">AJOUTER AU PANIER</div>
+              </div>
+           </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
     </div>
 </ion-content>
