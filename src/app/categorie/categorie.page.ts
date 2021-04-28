@@ -13,9 +13,9 @@ export class CategoriePage implements OnInit {
 
   slideOptsThree = {
     initialSlide: 1,
-    slidesPerView: 3,
+    slidesPerView: 4,
     loop: true,
-    centeredSlides: false,
+    centeredSlides: true,
   };
 
   constructor() {
