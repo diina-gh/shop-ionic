@@ -2,7 +2,7 @@
 <ion-header [translucent]="false" class="ion-no-padding">
 <ion-toolbar class="ion-no-padding header">
 
-   <div class="flexed-head">
+   <div class="flexed-head" *ngIf="!searching">
       <div class="group1">
         <div class="logo-container" (click)="toHome()">
           Shopping
@@ -21,6 +21,10 @@
           </div>
         </div>
       </div>
+  </div>
+
+  <div class="w-100 mt-1 sliding" *ngIf="searching">
+    <ion-searchbar placeholder="Que cherchez vous ?"></ion-searchbar>
   </div>
     
 </ion-toolbar>

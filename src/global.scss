@@ -247,3 +247,15 @@ ion-content{
   color: #222;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.sliding{
+  position: relative;
+  animation-name: slide;
+  animation-duration: 0.99s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {right: -330px;}
+  to {right: 0px;}
+}
