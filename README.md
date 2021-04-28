@@ -1,4 +1,4 @@
-![Image](https://github.com/diina-gh/Shop/blob/master/src/assets/img/preview.png)
+![Image](https://github.com/diina-gh/Shop/blob/master/src/assets/img/app-img2.png)
 ## Shop (work in progress..)
 `Shop` is an app template created with [Ionic Framework](https://ionicframework.com/)
 ###
@@ -24,6 +24,9 @@ npm install (to install the dependencies in the local node_modules folder)
 ionic serve (or ionic serve --l)
 ```
 The command `ionic serve` will start a live-reload server for your project in a web browser. When changes are made to any HTML, SASS, or TypeScript files, the browser will automatically reload.
+
+![Image](https://github.com/diina-gh/Shop/blob/master/src/assets/img/app-img1.png)
+
 ## Cordova
 With Cordova, you can test right in a simulator or use your own phone. To add a platform in your project, use the following commands:
 ```npm
