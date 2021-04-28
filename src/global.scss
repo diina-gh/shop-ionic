@@ -50,6 +50,12 @@
     }
 }
 
+@for $i from 1 through 100 {
+    .h-#{$i} {
+        height: $i * 1%;
+    }
+}
+
 @for $i from 1 through 1000 {
     .wdpx-#{$i} {
         width: $i * 1px !important;
@@ -211,6 +217,7 @@
     align-self: flex-end;
 }
 
+
 img{
     filter: brightness(1.065);
 }
@@ -250,6 +257,7 @@ ion-content{
 
 .sliding{
   position: relative;
+  top: 5px;
   animation-name: slide;
   animation-duration: 0.99s;  
   animation-fill-mode: forwards;
@@ -259,3 +267,4 @@ ion-content{
   from {right: -330px;}
   to {right: 0px;}
 }
+

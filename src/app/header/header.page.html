@@ -1,30 +1,33 @@
 <!--- header ---> 
 <ion-header [translucent]="false" class="ion-no-padding">
 <ion-toolbar class="ion-no-padding header">
+  
+  <div class="sh-navbar">
 
-   <div class="flexed-head" *ngIf="!searching">
+    <div class="flexed-head" *ngIf="!searching">
       <div class="group1">
-        <div class="logo-container" (click)="toHome()">
+        <div class="logo-container" (click)="navigate('tabs/home')">
           Shopping
         </div>
       </div>
       <div class="group2"> 
         <div class="item">
-          <div class="icon-container">
+          <div class="icon-container" (click)="navigate('tabs/categorie')">
             <ion-icon class="h-icon"  name="search-outline"></ion-icon>
           </div>
-        </div>
-
-        <div class="item">
+       </div>
+       <div class="item">
           <div class="icon-container">
             <ion-icon class="h-icon" name="cart-outline"></ion-icon>
           </div>
-        </div>
+       </div>
       </div>
-  </div>
+    </div>
 
-  <div class="w-100 mt-1 sliding" *ngIf="searching">
-    <ion-searchbar placeholder="Que cherchez vous ?"></ion-searchbar>
+    <div class="w-100 sliding" *ngIf="searching">
+      <ion-searchbar placeholder="Que cherchez vous ?"></ion-searchbar>
+    </div>
+
   </div>
     
 </ion-toolbar>

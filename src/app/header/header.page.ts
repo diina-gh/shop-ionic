@@ -16,11 +16,11 @@ export class HeaderPage implements OnInit {
   }
 
   ngOnInit() {
+    this.href = this.router.url;
     this.checkPage();
   }
 
   checkPage() {
-    this.href = this.router.url;
     console.log("We here", this.href);
     if (this.href == "/tabs/categorie") {
       console.log("YES YES");
@@ -29,6 +29,10 @@ export class HeaderPage implements OnInit {
       console.log("NOPE");
       this.searching = false;
     }
+  }
+
+  navigate(url){
+    this.navCtrl.navigateRoot(url);
   }
 
   toHome() {
