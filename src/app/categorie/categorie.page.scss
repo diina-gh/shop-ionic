@@ -24,3 +24,9 @@ ion-grid{
 ion-col{
     --ion-grid-column-padding: 7px;
 }
+
+ion-chip{
+    background: rgba(80, 120, 143, 0.15) !important;
+    color: #5491bd;
+    font-weight: 500;
+}
