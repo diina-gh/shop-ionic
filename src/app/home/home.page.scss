@@ -183,6 +183,9 @@ justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0 0 4px 4px;
+  &:active{
+      background: linear-gradient(to right,#36678dd7, #5491bdd3);
+  }
 }
 
 .txt{
