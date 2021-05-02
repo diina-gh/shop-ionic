@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NavController,} from '@ionic/angular'
+import {NavController,} from '@ionic/angular';
 import { Router } from '@angular/router';
 
 
@@ -12,8 +12,7 @@ export class HeaderPage implements OnInit {
   searching: Boolean = false;
   href: any;
 
-  constructor(private navCtrl: NavController, private router: Router) {
-  }
+  constructor(private navCtrl: NavController, private router: Router) {}
 
   ngOnInit() {
     this.href = this.router.url;
@@ -31,11 +30,16 @@ export class HeaderPage implements OnInit {
     }
   }
 
-  navigate(url){
+  navigate(url) {
     this.navCtrl.navigateRoot(url);
   }
 
-  toHome() {
-    this.navCtrl.navigateBack("tabs/home");
+  navigateForward(url) {
+    this.navCtrl.navigateForward(url);
   }
+
+  navigateBack(url) {
+    this.navCtrl.navigateBack(url);
+  }
+
 }

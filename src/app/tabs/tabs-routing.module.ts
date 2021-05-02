@@ -33,6 +33,12 @@ const routes: Routes = [
       },
 
       {
+        path: "panier",
+        loadChildren: () =>
+          import("../panier/panier.module").then((m) => m.PanierPageModule),
+      },
+
+      {
         path: "",
         redirectTo: "/tabs/home",
         pathMatch: "full",
