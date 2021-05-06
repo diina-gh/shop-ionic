@@ -34,9 +34,6 @@ ionic cordova platform add android
 //or 
 ionic cordova plarform add ios
 ```
-## Xcode
-To run and debug Ionic apps on iOS simulators and devices, you can use Xcode. Xcode is an IDE for creating native iOS apps. It includes the iOS SDK and Xcode command-line tools. 
-[More about Xcode..](https://developer.apple.com/xcode/)
 ###
 Then:
 ```npm
@@ -45,4 +42,7 @@ ionic cordova run android --device
 ionic cordova run ios --device (although I would recommend using xcode for ios device)
 ```
 Note that your phone and your computer must be connected via a USB port.
+## Xcode
+To run and debug Ionic apps on iOS simulators and devices, you can use Xcode. Xcode is an IDE for creating native iOS apps. It includes the iOS SDK and Xcode command-line tools. 
+[More about Xcode..](https://developer.apple.com/xcode/)
 
